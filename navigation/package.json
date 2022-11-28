@@ -7,11 +7,11 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "eject": "expo eject"
+    "eject": "expo eject",
   },
   "husky": {
     "hooks": {
-        "pre-commit": "echo \"[Husky] pre-commit\""
+        "pre-commit": "echo [Husky] pre-commit"
     }
   },
   "dependencies": {
