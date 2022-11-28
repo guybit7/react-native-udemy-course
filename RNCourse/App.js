@@ -25,7 +25,7 @@ export default function App() {
 
     return (
         <View style={styles.appContainer}>
-            <Button title='Add new goal' color="#5e0acc" onPress={startAddGoalHandler}/>
+            <Button title='Add new goal!!!!' color="#5e0acc" onPress={startAddGoalHandler}/>
             {modalIsVisible && <GoalInput addGoalHandler={addGoalHandler} visible={modalIsVisible}
                                           onCloseModal={onCloseModalHandler}/>}
             <View style={styles.goalsContainer}>
@@ -37,6 +37,7 @@ export default function App() {
                     }}
                     keyExtractor={(item, index) => {
                         return item.id;
+
                     }}
                     alwaysBounceVertical={false}
                 />
