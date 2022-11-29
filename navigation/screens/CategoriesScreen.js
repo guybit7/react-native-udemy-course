@@ -3,9 +3,12 @@ import {FlatList, StyleSheet} from 'react-native'
 import CategoryGridTile from "../components/CategoryGridTile";
 
 function CategoriesScreen({navigation}) {
+
     function renderCategoryItem(itemData) {
         function onPressHandler() {
-            navigation.navigate('MealsOverview');
+            navigation.navigate('MealsOverview', {
+                id: itemData.item.id
+            });
         }
 
         return <CategoryGridTile title={itemData.item.title}
