@@ -12,7 +12,7 @@ export default function App() {
 
     return (
         <>
-            <StatusBar style='dark'/>
+            <StatusBar style='light'/>
             <NavigationContainer>
                 <Stack.Navigator initialRouteName="MealsCategories" screenOptions={{
                     headerStyle: {backgroundColor: "#351401"},
